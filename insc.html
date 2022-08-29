@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../Styles/styles.css" type="text/css" />
+    <title>Inscripción</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="../img/logomuni.png" alt="logo muni" />
+      <h1>Polideportivo General Paz</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./about.html">Nosotros</a></li>
+          <li><a href="./actividades.html">Actividades</a></li>
+          <li><a href="./insc.html">Inscripción</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="noticia">
+        <h1 class="noticia__subtitulo">Formulario de Inscripción</h1>
+
+        <article class="formulario">
+          <form>
+            <label for="nombre"> Nombre </label>
+            <input class="input" type="tex" id="nombre" />
+            <hr />
+            <label for="apellido"> Apellido </label>
+            <input class="input" type="text" id="apellido" />
+            <hr />
+            <label for="edad"> Edad </label>
+            <input class="input" type="number" id="edad" />
+            <hr />
+            <label for="actividad">Actividad</label>
+            <select class="input" id="actividad">
+              <option selected="selected">Seleccione una actividad</option>
+              <option>Aquagym</option>
+              <option>Natacion</option>
+              <option>Movimiento expresivo</option>
+              <option>Newcom</option>
+            </select>
+            <br />
+            <hr />
+            <label>Seleccione dias que va a realizar la actividad</label>
+            <br /><br />
+            <span>Lunes</span>
+            <input type="checkbox" />
+            <span>Martes</span>
+            <input type="checkbox" />
+            <span>Miercoles</span>
+            <input type="checkbox" />
+            <span>Jueves</span>
+            <input type="checkbox" />
+            <span>Viernes</span>
+            <input type="checkbox" />
+            <hr />
+            <label> Seleccione horario </label>
+            <br /><br />
+            <span>8:30 a 9:30</span>
+            <input type="radio" name="coderhouce" />
+            <span>9:30 a 10:30</span>
+            <input type="radio" name="coderhouce" />
+            <span>10:30 a 11:30</span>
+            <input type="radio" name="coderhouce" />
+            <span>11:30 a 12:30</span>
+            <input type="radio" name="coderhouce" />
+            <hr />
+            <label for="adjuntar"> Adjuntar Ficha Médica </label>
+            <br /><br />
+            <input type="file" id="adjuntar" rows="10" cols="50" />
+            <br /><br />
+            <input class="button" type="submit" />
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <img src="../img/logocba.svg" alt="logo cba" />
+      <p>
+        Contacto: 0351-4339105
+        <br />
+        Ubicación: Roma 5002, Córdoba Capital
+      </p>
+    </footer>
+  </body>
+</html>
