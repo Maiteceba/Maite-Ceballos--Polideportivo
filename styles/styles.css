@@ -1,60 +1,65 @@
-body,
-html {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-header {
-  background-color: rgb(63, 192, 235);
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  border-bottom: 3px solid rgb(0, 122, 163);
-  grid-area: header;
-}
-
 main {
   grid-area: main;
+}
+p {
+  font-size: 15px;
 }
 
 #imagen {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   height: 200px;
   width: 200px;
-  border-radius: 5px;
-  margin-right: 10px;
-  flex-direction: row;
-  justify-items: center;
-}
-.noticia__subtitulo {
-  color: rgb(109, 163, 222);
-  padding-left: 70px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  text-align: center;
 }
 
 .article__contenido {
   background-color: rgb(186, 208, 232);
-  padding-top: 30px;
   padding-left: 70px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  padding-top: 20px;
 }
+.noticia {
+}
+
+.noticia__subtitulo {
+  color: rgb(109, 163, 222);
+  font-size: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
 #items {
   font-style: italic;
 }
 
 .formulario {
-  margin-right: 30px;
+  color: black;
+  text-align: left;
 }
 
-main h1 {
+.Titulo {
+  display: flex;
+  color: white;
+  margin-left: 30px;
+  font-size: 35px;
+  text-align: right;
   margin-top: 30px;
   margin-bottom: 60px;
   padding-top: 30px;
-  font-size: 32px;
 }
 
 main h2 {
@@ -77,11 +82,6 @@ main img {
   width: 100px;
   border: 3px solid rgb(0, 122, 163);
   border-radius: 10px;
-}
-
-header h1 {
-  margin-left: 30px;
-  line-height: 30px;
 }
 
 header nav {
@@ -108,21 +108,17 @@ section article {
 .descripcion {
   text-align: left;
   background-color: rgb(186, 208, 232);
-  padding-top: 30px;
-  padding-left: 70px;
+  padding-top: 10px;
+  padding-left: 10px;
   padding-bottom: 10px;
-  padding-right: 30px;
-  margin-bottom: 40px;
+  padding-right: 10px;
+  margin-bottom: 10px;
   content: 30px;
 }
 
-#NATACIÓN {
-  display: flex;
-  justify-content: center;
+.NATACIÓN {
   height: 250px;
-  width: 250px;
-  border: 5px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 10px;
   border: 3px solid #555;
 }
@@ -133,13 +129,13 @@ section article {
 }
 
 .input {
-  padding: 6px 12px;
+  padding: 10px 10px;
   border: 2px solid rgb(0, 122, 163);
   border-radius: 5px;
   background-color: white;
 }
 .button {
-  padding: 6px 12px;
+  padding: 12px 12px;
   border: 2px solid rgb(0, 122, 163);
   border-radius: 5px;
   background-color: rgb(63, 192, 235);
@@ -171,12 +167,8 @@ footer p {
 
 .gridPadre {
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
   grid-template-rows: 400px 400px 400px 400px;
-}
-
-.border {
-  border: 1px solid black;
 }
 
 .gridContenido {
@@ -185,7 +177,7 @@ footer p {
   grid-template-rows: auto auto;
 }
 
-@media (max-width: 648px) {
+@media (max-width: 480px) {
   .gridPadre {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
@@ -207,7 +199,7 @@ footer p {
   }
 }
 
-@media screen and(max-width: 648px) {
+@media screen and(max-width: px) {
   #NATACIÓN {
     height: 10px;
     width: 10px;
@@ -225,9 +217,9 @@ footer p {
   }
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 480px) {
   .titulo {
-    font-size: 20px;
+    font-size: 5px;
   }
   ul {
     display: flex;
@@ -240,9 +232,17 @@ footer p {
     width: 70px;
   }
 }
-@media screen and(max-width: 648) {
+@media screen and(min-width: 480px ) {
+  .noticia {
+    font-size: 10px;
+    padding-top: 10pxpx;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
   .noticia__subtitulo {
-    padding-top: 5px;
+    font-size: 10px;
+    padding-top: 50px;
     padding-bottom: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
