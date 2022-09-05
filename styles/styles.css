@@ -188,7 +188,7 @@ footer p {
   }
 }
 
-@media screen and(max-width: 648px) {
+@media screen and(max-width: 480px) {
   .descripcion {
     padding-top: 10px;
     padding-left: 70px;
@@ -197,27 +197,21 @@ footer p {
     margin-bottom: 10px;
     content: 30px;
   }
-}
-
-@media screen and(max-width: px) {
   #NATACIÓN {
     height: 10px;
     width: 10px;
-    border: 5px;
     padding-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: auto;
     border: 3px solid #555;
   }
+
   .Newcom {
     height: 5px;
     margin-right: 10px;
     margin-left: 20px;
   }
-}
-
-@media screen and (max-width: 480px) {
   .titulo {
     font-size: 5px;
   }
@@ -232,7 +226,14 @@ footer p {
     width: 70px;
   }
 }
-@media screen and(min-width: 480px ) {
+
+@media screen and (max-width: 480px) {
+  .Titulo {
+    display: none;
+  }
+}
+
+@media screen and(min-width: 481px ) {
   .noticia {
     font-size: 10px;
     padding-top: 10pxpx;
