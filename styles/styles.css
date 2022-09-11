@@ -50,6 +50,31 @@ p {
   color: black;
   text-align: left;
 }
+.whatsapp {
+  width: 60px;
+  height: 60px;
+  border: none;
+}
+.ubicacion {
+  width: 20px;
+  height: 30px;
+  border: none;
+}
+.mapa {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.sc-closed-icon {
+  transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
+  width: 60px;
+  height: 60px;
+
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
 
 .Titulo {
   display: flex;
