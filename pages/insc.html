@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
     <title>Inscripción</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,7 +18,7 @@
     <!--Encabezado-->
 
     <div id="grid-area">
-      <nav class="navbar navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <img class="logo" src="../img/logomuni.png" alt="logo muni" />
 
@@ -97,27 +99,32 @@
       <main>
         <section class="noticia">
           <h1 class="noticia__subtitulo">Formulario de Inscripción</h1>
-
-          <article class="formulario">
+      <article class="formulario">
             <form>
-              <label for="nombre"> Nombre </label>
-              <input class="input" type="tex" id="nombre" />
-              <hr />
-              <label for="apellido"> Apellido </label>
-              <input class="input" type="text" id="apellido" />
-              <hr />
+
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label=" Nombre">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+              </div>
+              <hr>
               <label for="edad"> Edad </label>
-              <input class="input" type="number" id="edad" />
+              <input type="number" id="edad" />
               <hr />
-              <label for="actividad">Actividad</label>
-              <select class="input" id="actividad">
-                <option selected="selected">Seleccione una actividad</option>
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una actividad</option>
                 <option>Aquagym</option>
                 <option>Natacion</option>
                 <option>Movimiento expresivo</option>
                 <option>Newcom</option>
               </select>
-              <br />
+      
+              </select>
+             
               <hr />
               <label>Seleccione dias que va a realizar la actividad</label>
               <br /><br />
@@ -147,13 +154,18 @@
               <br /><br />
               <input type="file" id="adjuntar" rows="10" cols="50" />
               <br /><br />
-              <input class="button" type="submit" />
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+              </div>
+
             </form>
           </article>
         </section>
-      </main>
-      <img class="sc-closed-icon" src="../img/whatsapp.png" alt="Icon Closed" />
-    </div>
+      </main> 
+
+      <div>
+      <img class="sc-closed-icon" src="../img/whatsapp.png"
+       alt="Icon Closed"></div>
 
     <!--footer-->
 
@@ -165,6 +177,7 @@
         Ubicación: Roma 5002, Córdoba Capital
       </p>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
