@@ -45,6 +45,9 @@ p {
 }
 
 .formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: black;
   text-align: left;
 }
