@@ -19,6 +19,10 @@ p {
   height: 200px;
   width: 200px;
 }
+/* .nav-item  
+  text-decoration: #ddd;
+  color: #ddd;
+} */
 
 .article__contenido {
   background-color: rgb(186, 208, 232);
