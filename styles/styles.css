@@ -17,17 +17,15 @@ p {
   flex-direction: row;
   justify-content: center;
   height: 200px;
-  width: 200px;
+  width: 500px;
+  margin-left: 300px;
+  margin-bottom: 20px;
 }
-/* .nav-item  
-  text-decoration: #ddd;
-  color: #ddd;
-} */
 
 .article__contenido {
-  background-color: rgb(186, 208, 232);
+  background-image: url(../img/imgfondo.jpg);
   padding-left: 70px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin-top: 10px;
   margin-bottom: 1rem;
   padding-right: 10px;
@@ -78,6 +76,15 @@ p {
   position: fixed;
   right: 25px;
   bottom: 25px;
+}
+.Nosotros {
+  background-image: url(../img/imgfondo.jpg);
+  padding-left: 70px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  padding-top: 20px;
 }
 
 .Titulo {
@@ -141,7 +148,6 @@ section article {
 .tarjetas {
   display: grid;
   grid-template-columns: 425px 425px 425px;
-  /* grid-template-areas:  */
   grid-column-gap: 15px;
 }
 
@@ -176,18 +182,6 @@ footer p {
   text-align: right;
   width: 100%;
 }
-#grid-area {
-  display: grid;
-  grid-template-areas:
-    "header "
-    "main"
-    "footer";
-  gap: 5px;
-  height: 100vh;
-  grid-template-rows: 100fr auto 100fr;
-  grid-template-columns: 100fr;
-}
-
 .gridPadre {
   display: grid;
   grid-template-rows: 400px 400px 400px 400px;
@@ -208,6 +202,60 @@ footer p {
     margin-top: 5px;
     padding-top: 5px;
   }
+
+  .noticia__subtitulo {
+    font-size: 23px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .article__contenido {
+    background-image: url(../img/imgfondo.jpg);
+    width: 400px;
+    height: 900px;
+
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-top: 20px;
+  }
+  .Nosotros {
+    background-image: url(../img/imgfondo.jpg);
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-top: 20px;
+  }
+  .article {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+
+  #imagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 200px;
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  .texto {
+    font-size: 10px;
+    font-style: normal;
+    text-align: left;
+  }
+  #items {
+    font-size: 15px;
+    font-style: italic;
+  }
 }
 
 @media screen and(max-width: 480px) {
@@ -219,6 +267,14 @@ footer p {
     margin-bottom: 10px;
     content: 30px;
   }
+  .columnas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+  }
   #NATACIÓN {
     height: 10px;
     width: 10px;
@@ -227,6 +283,9 @@ footer p {
     margin-right: 5px;
     margin-bottom: auto;
     border: 3px solid #555;
+  }
+  .card {
+    height: 10px;
   }
 
   .Newcom {
@@ -249,13 +308,13 @@ footer p {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .Titulo {
     display: none;
   }
 }
 
-@media screen and(min-width: 481px ) {
+@media (min-width: 480px) {
   .noticia {
     font-size: 10px;
     padding-top: 10pxpx;
@@ -264,17 +323,10 @@ footer p {
     margin-bottom: 5px;
   }
   .noticia__subtitulo {
-    font-size: 10px;
-    padding-top: 50px;
+    font-size: 30px;
+    padding-top: px;
     padding-bottom: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-  }
-}
-
-@media screen and (min-width: 648px) {
-  .grid {
-    display: flex;
-    flex-direction: column;
   }
 }
