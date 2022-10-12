@@ -13,9 +13,6 @@ p {
 }
 
 #imagen {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   height: 200px;
   width: 500px;
   margin-left: 300px;
@@ -44,31 +41,35 @@ p {
 
 #items {
   font-style: italic;
+  font-size: 15px;
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   color: black;
   text-align: left;
+  font-size: 20px;
+  justify-items: lef;
 }
 .whatsapp {
-  width: 60px;
-  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 95px;
+  height: 90px;
   border: none;
 }
-.ubicacion {
-  width: 20px;
-  height: 30px;
+.inst {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 80px;
+  height: 80px;
   border: none;
+  padding-bottom: 30px;
 }
-.mapa {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-}
+
 .sc-closed-icon {
   transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
   width: 60px;
@@ -145,12 +146,6 @@ section article {
   padding: 50px;
 }
 
-.tarjetas {
-  display: grid;
-  grid-template-columns: 425px 425px 425px;
-  grid-column-gap: 15px;
-}
-
 .card-img-top {
   border: none;
   height: 200px;
@@ -171,12 +166,11 @@ section article {
 }
 
 footer {
-  background-color: #eee;
-  display: flex;
   padding: 50px 20px;
   border-top: 3px solid #ddd;
   align-items: center;
   grid-area: footer;
+  background-color: rgba(238, 238, 238, 0.301);
 }
 footer p {
   text-align: right;
@@ -189,41 +183,60 @@ footer p {
 
 .gridContenido {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: 800px 400px;
+}
+.maraton {
+  height: 800px;
+  width: 800px;
+  margin-left: 280px;
+  margin-top: 30px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .gridPadre {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    margin-top: 5px;
-    padding-top: 5px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+
+  .gridContenido {
+    margin-right: 30px;
   }
 
   .noticia__subtitulo {
-    font-size: 23px;
+    font-size: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    text-align: center;
+    text-align: left;
   }
 
   .article__contenido {
     background-image: url(../img/imgfondo.jpg);
-    width: 400px;
-    height: 900px;
+    width: 350px;
+    height: 800px;
 
     padding-left: 10px;
     margin-top: 10px;
     margin-bottom: 1rem;
+    margin-right: 50px;
     padding-bottom: 5px;
-    padding-right: 10px;
+    padding-right: 20px;
     padding-top: 20px;
   }
+  .article {
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+
+  .maraton {
+    height: 400px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
   .Nosotros {
     background-image: url(../img/imgfondo.jpg);
     padding-left: 10px;
@@ -242,7 +255,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    height: 200px;
+    height: 150px;
     width: 300px;
     margin-left: 30px;
     margin-bottom: 20px;
@@ -256,9 +269,19 @@ footer p {
     font-size: 15px;
     font-style: italic;
   }
+
+  footer {
+    background-color: rgba(238, 238, 238, 0.42);
+    /* display: flex; */
+    padding: 50px 20px;
+    border-top: 3px solid #ddd;
+    border-bottom: 3px solid #ddd;
+    align-items: center;
+    margin-bottom: 0px;
+  }
 }
 
-@media screen and(max-width: 480px) {
+@media (max-width: 425px) {
   .descripcion {
     padding-top: 10px;
     padding-left: 70px;
@@ -267,17 +290,10 @@ footer p {
     margin-bottom: 10px;
     content: 30px;
   }
-  .columnas {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 30px;
-    height: 20px;
-    margin-right: 10px;
-  }
+
   #NATACIÓN {
-    height: 10px;
-    width: 10px;
+    height: 50px;
+    width: 50px;
     padding-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -285,11 +301,19 @@ footer p {
     border: 3px solid #555;
   }
   .card {
-    height: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100px;
+    width: 100%;
   }
 
+  .tarjetas {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-column-gap: 15px;
+  }
   .Newcom {
-    height: 5px;
+    height: 10px;
     margin-right: 10px;
     margin-left: 20px;
   }
@@ -308,13 +332,13 @@ footer p {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .Titulo {
     display: none;
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 425px) {
   .noticia {
     font-size: 10px;
     padding-top: 10pxpx;
@@ -323,10 +347,12 @@ footer p {
     margin-bottom: 5px;
   }
   .noticia__subtitulo {
-    font-size: 30px;
+    font-size: 20px;
     padding-top: px;
     padding-bottom: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-right: 10px;
+    padding-right: 10px;
   }
 }
